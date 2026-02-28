@@ -1,0 +1,278 @@
+@import url(https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=Archivo+Black&family=DM+Sans:wght@400..500&display=swap);
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  /* cursor: url("../images/cursor.png"), auto; */
+  background-color: #0d0c0b;
+  color: #a8a29e;
+  line-height: 1.75em;
+  font-size: 16px;
+}
+
+a {
+  color: #b8602e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: 13%;
+} 
+
+#header {
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d0c0b;
+  border-bottom: 1px dotted #f7edea;
+
+  /* background-image: url("../images/header-background.jpg");
+  background-size: cover;*/
+}
+
+#site-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e0ddd5;
+  margin-left: 2em;
+
+
+}
+
+#main-navigation ul {
+  display: flex;
+  gap: 15px;
+  font-size: 1.2em;
+  list-style: none;
+  margin-right: 2em;
+}
+
+#main-navigation a {
+  color: #57534e;
+  text-transform: uppercase;
+}
+
+#main-navigation a:hover {
+  color: #ff8c00;
+}
+
+#main {
+  max-width: 1050px;
+  margin: 0 auto;
+  /* padding-top: 45px; */
+  padding: 45px 30px;
+  display: flex;
+  gap: 45px;
+}
+
+#article {
+  flex-grow: 1;
+  margin-top: -1.0em;
+
+}
+
+#article h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: 3em;
+  font-weight: 800;
+  width: 100%;
+  color: #ccc;
+  margin-bottom: 5px;
+  line-height: 1.2em;
+  margin-left: 0em;
+  text-align: right;
+}
+
+#article p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #ccc;
+  line-height: 2.0;
+  text-align: justify;
+}
+
+#article img {
+  width: 100%;
+}
+
+#footnotes {
+  margin-top: 25px;
+  margin-left: 2em;
+
+}
+
+#footnotes p {
+  font-family: 'DM Sans', sans-serif;
+
+}
+
+.comments-heading,
+#footnotes h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #57534e;
+  margin-bottom: 15px;
+}
+
+.comments-heading {
+  margin-left: 2em;
+}
+
+#comments-note {
+  margin-left: 5.10em;
+}
+
+ol {
+  padding-left: 40px;
+}
+
+li {
+  margin-bottom: 15px;
+  font-size: 0.8em;
+  color: #78716c;
+}
+
+#comment-form {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 10px;
+  background-color: #111111;
+  border: 1px solid #333333;
+  color: #a8a29e;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8em;
+  border-radius: 4px;
+}
+
+.form-field textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+#comment-form button {
+  padding: 10px 28px;
+  background-color: #b8602e;
+  color: #0d0c0b;
+  border: none;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  width: 190px;
+}
+
+#comment-form button:hover {
+  background-color: #ff8c00;
+}
+
+#sidebar {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.sidebar-content {
+  padding-top: 35px;
+  margin-bottom: 35px;
+}
+
+.sidebar-content h2 {
+  margin-top: 65px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #78716c;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.sidebar-content li {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar-content li a {
+  font-size: 1em;
+  color: #ffeacf;
+
+}
+
+.sidebar-content li a:hover {
+  color: #ff8c00;
+}
+
+.about-author {
+  font-size: 0.8em;
+  color: #faf3f3;
+  margin-top: 40px;
+  line-height: 2em;
+}
+
+#footer {
+  border-top: 2px solid #2a2523;
+  padding: 18px 30px;
+  margin-top: 30px;
+  display: flex;
+  /* flex-flow: row wrap; */
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#footer p {
+  font-size: 0.65em;
+  color: #44403c;
+}
+
+#footer nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+#footer nav a {
+  font-size: 0.65em;
+  color: #44403c;
+}
+
+#footer nav a:hover {
+  color: #ff8c00;
+}
+
+.cig {
+  margin-right: 2.8em;
+}
+
+.flame {
+  color: rgba(255, 140, 0, 0.379);
+  background-color: rgb(133, 0, 0);
+  border-radius: 7px;
+}

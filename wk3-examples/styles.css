@@ -1,0 +1,40 @@
+/* a css rule is made up of a selector followed by curly braces, 
+    inside the curly braces are one or more declarations (css properties and values)
+
+<selector(s)> {
+<property-name>: <value>;
+<property2-name>: <value2>;
+*/
+
+body {
+    font-family: fantasy, sans-serif;
+
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+/* select h2 elements which are descendants of the header*/
+header h2 {
+    font-style: italic;
+    font: normal 1.2em "Trebuchet MS", sans-serif;
+    color: #00008b;
+}
+/* rem is original font size defined most likely in html, 
+em is inherited font size*/
+#site-name {
+    letter-spacing:2px;
+}
+/*link related pseudo classes
+ :link (select an element that is a link
+ :visited (select already visited link)
+ :hover
+ :active
+    a:link {
+color:cyan
+
+to select a class, its . + class_name
+} */
+ #header {
+    background-color: lightgreen; display:inline-block; width:100%;
+ }

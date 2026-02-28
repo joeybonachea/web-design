@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@700&family=Poppins:wght@300&display=swap');
+
+/*************************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. GENERAL/DEFAULT STYLES
+ * 2. HEADER
+ * -- 2a. Site name and logo
+ * -- 2b. Navigation
+ * 3. MAIN CONTENT
+ * -- 3a. Hero
+ * 4. FOOTER
+ * -- 4a. Navigation
+ * -- 4b. Copyright
+ *************************************************************/
+:root {
+  --pink: #E0376A;
+}
+
+/* 1. GENERAL/DEFAULT STYLES */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+.content-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1.25em;
+}
+h1, h2 {
+  font-family: "Bellota", cursive;
+  font-weight: 700;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  text-transform: lowercase;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* 2. HEADER */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* -- 2a. Site name and logo */
+
+
+/* -- 2b. Navigation */
+#main-navigation {
+  font-size: 1.5em;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+#main-navigation .menu {
+  gap: 1.61em;
+}
+
+/* 3. MAIN CONTENT */
+
+/* -- 3a. Hero */
+.hero-wrapper {
+  text-align: center;
+}
+.hero-text {
+  background: url("../images/macarons.png") center center / cover no-repeat;
+}
+.hero-text h1 {
+  font-size: 6em;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 5px 5px rgba(58, 7, 7, 0.82);
+  padding: 0.8em 0 0.3em;
+}
+a.button {
+  display: inline-block;
+  font-size: 0.9375em;
+  font-family: inherit;
+  text-decoration: none;
+  color: var(--pink);
+  background-color: #fff;
+  border: 2px solid var(--pink);
+  border-radius: 2em;
+  padding: 0.75em 2em;
+  margin-bottom: 2em;
+}
+a.button:hover {
+  background-color: var(--pink);
+  color: #fff;
+}
+
+/* 4. FOOTER */
+#footer {
+  padding: 1.5em 1.25em;
+}
+
+/* -- 4a. Navigation */
+#footer-navigation {
+  font-size: 1.25em;
+}
+#footer-navigation .menu {
+  gap: 2em;
+}
+
+/* -- 4b. Copyright */
+#copyright {
+  font-size: 0.875em;
+  margin-top: 0.75em;
+}
+
+#logo-and-site-name {
+  font-size: 2em;
+  margin: 1.0625em 0;
+}
+.logo {
+   text-transform: capitalize;
+
+}
